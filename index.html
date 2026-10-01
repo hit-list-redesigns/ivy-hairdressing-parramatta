@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ivy Hairdressing &amp; Beauty Salon, Parramatta</title>
+<meta name="description" content="Cuts, colour, balayage, extensions, keratin and nails at Argus Lane, Parramatta. Real prices, online booking.">
+<meta name="theme-color" content="#0e271e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e271e'/%3E%3Cpath d='M16 26C9 22 7 14 16 6c9 8 7 16 0 20z' fill='%23d6b36a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b211a;
+  --ivy:#0f2a20;
+  --ivy-2:#16382b;
+  --leaf:#2e6a4e;
+  --lichen:#edf1e9;
+  --lichen-2:#dfe7db;
+  --brass:#d6b36a;
+  --brass-ink:#7a5914;
+  --text:#10251b;
+  --muted:#46594d;
+  --on-dark:#f2f0e6;
+  --on-dark-muted:#b9c9bd;
+  --line:rgba(16,37,27,.16);
+  --line-dark:rgba(242,240,230,.18);
+  --display:"Bodoni Moda","Didot",Georgia,serif;
+  --sans:"Albert Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --gutter:clamp(20px,5vw,72px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;scrollbar-color:var(--leaf) var(--ivy);scrollbar-width:thin}
+body{margin:0;background:var(--lichen);color:var(--text);font:400 1.0625rem/1.6 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+::selection{background:var(--brass);color:var(--ink)}
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:var(--ivy)}
+::-webkit-scrollbar-thumb{background:var(--leaf);border-radius:8px;border:3px solid var(--ivy)}
+::-webkit-scrollbar-thumb:hover{background:var(--brass)}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px;border-radius:4px}
+.on-light :focus-visible,.light :focus-visible{outline-color:var(--leaf)}
+button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:clamp(2.1rem,4.4vw,3.6rem);line-height:1.05}
+h2 em,h1 em{font-style:italic;font-weight:400}
+p{margin:0;text-wrap:pretty}
+.wrap{padding-inline:var(--gutter);max-width:1360px;margin-inline:auto}
+.tag{display:inline-block;font:600 .72rem/1 var(--sans);letter-spacing:.04em;padding:.35rem .55rem;border:1px dashed currentColor;border-radius:3px;vertical-align:middle;color:var(--brass-ink)}
+.dark .tag{color:var(--brass)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.7rem;min-height:52px;padding:.85rem 1.6rem;border-radius:999px;border:1px solid transparent;font-weight:600;font-size:1rem;text-decoration:none;transition:transform .35s var(--ease),background .25s,color .25s,box-shadow .35s var(--ease)}
+.btn svg{width:18px;height:18px;transition:transform .35s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-brass{background:var(--brass);color:var(--ink);box-shadow:0 12px 24px -12px rgba(0,0,0,.6)}
+.btn-brass:hover{background:#e6c47c;transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line-dark);color:var(--on-dark)}
+.btn-ghost:hover{border-color:var(--brass);color:var(--brass)}
+.btn-dark{background:var(--ivy);color:var(--on-dark)}
+.btn-dark:hover{background:var(--leaf)}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none}
+
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:rgba(11,33,26,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--on-dark);border-bottom:1px solid var(--line-dark)}
+header.top .wrap{display:flex;align-items:center;gap:2rem;min-height:72px}
+.brand{font-family:var(--display);font-size:1.7rem;font-style:italic;text-decoration:none;line-height:1;display:flex;align-items:baseline;gap:.6rem;white-space:nowrap}
+.brand small{font:500 .72rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--on-dark-muted);font-style:normal}
+nav.main{margin-left:auto;display:flex;gap:2rem}
+nav.main a{text-decoration:none;font-weight:500;font-size:.98rem;color:var(--on-dark-muted);padding:.4rem 0;position:relative;transition:color .2s}
+nav.main a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--brass);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+nav.main a:hover{color:var(--on-dark)}
+nav.main a:hover::after{transform:scaleX(1)}
+header.top .btn{min-height:44px;padding:.55rem 1.2rem;font-size:.95rem}
+
+/* hero */
+.dark{background:var(--ivy);color:var(--on-dark)}
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(60% 80% at 78% 40%,#1d4535 0%,transparent 70%),var(--ivy)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,64px);align-items:center;min-height:calc(100svh - 72px);min-height:min(calc(100svh - 72px),860px);padding-block:clamp(40px,7vh,88px)}
+.hero h1{font-size:clamp(3rem,6.6vw,5.6rem);line-height:.98;font-weight:400;letter-spacing:-.02em}
+.hero h1 em{color:var(--brass)}
+.hero .lede{margin-top:1.6rem;font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--on-dark-muted);max-width:34rem}
+.hero .lede strong{color:var(--on-dark);font-weight:600}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.2rem;align-items:center}
+.hero .facts{margin-top:2.4rem;position:relative;z-index:3;display:flex;flex-wrap:wrap;gap:.5rem 1.8rem;color:var(--on-dark-muted);font-size:.95rem;border-top:1px solid var(--line-dark);padding-top:1.2rem;max-width:34rem}
+.hero .facts span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--brass);margin-right:.6rem;vertical-align:middle}
+.stage{position:relative;justify-self:center;width:min(100%,520px);aspect-ratio:4/5.1}
+.stage svg.vine{position:absolute;inset:-9% -14% -7% -18%;width:132%;height:116%;overflow:visible;z-index:0;pointer-events:none}
+.leafpic{position:absolute;inset:0;z-index:1;border-radius:90% 0 90% 0 / 70% 0 70% 0;overflow:hidden;box-shadow:0 40px 70px -30px rgba(0,0,0,.65)}
+.leafpic img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.leafpic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(11,33,26,.35))}
+.stage figcaption{position:absolute;z-index:2;right:-2%;bottom:6%;background:var(--brass);color:var(--ink);padding:.7rem 1rem;border-radius:3px;font-weight:600;font-size:.9rem;box-shadow:0 14px 26px -12px rgba(0,0,0,.5)}
+.vine path.stem{fill:none;stroke:var(--brass);stroke-width:2.2;stroke-linecap:round}
+.vine .lf{fill:var(--leaf);stroke:var(--brass);stroke-width:1;transform-box:fill-box;transform-origin:50% 100%}
+@media(prefers-reduced-motion:no-preference){
+  .vine .stem{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:grow 3.2s .25s var(--ease) forwards}
+  .vine .lf{transform:scale(0);animation:pop .9s var(--ease) forwards;animation-delay:calc(.25s + var(--d))}
+  .leafpic{clip-path:inset(0 0 100% 0);animation:reveal 1.5s .1s var(--ease) forwards}
+  .hero .rise{opacity:0;transform:translateY(18px);animation:rise 1s var(--ease) forwards}
+  .hero .rise:nth-child(2){animation-delay:.15s}.hero .rise:nth-child(3){animation-delay:.3s}.hero .rise:nth-child(4){animation-delay:.45s}
+}
+@keyframes grow{to{stroke-dashoffset:0}}
+@keyframes pop{to{transform:scale(1)}}
+@keyframes reveal{to{clip-path:inset(0 0 0 0)}}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* services */
+.services{padding-block:clamp(72px,11vw,150px)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:clamp(36px,5vw,64px)}
+.sec-head p{max-width:30rem;color:var(--muted)}
+.menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,5vw,80px) clamp(32px,6vw,96px)}
+.menu section h3{font-weight:500;font-size:clamp(1.7rem,2.6vw,2.2rem);font-style:italic;padding-bottom:.7rem;border-bottom:1px solid var(--text);margin-bottom:.4rem}
+.menu ul{list-style:none;margin:0;padding:0}
+.row{display:flex;align-items:center;gap:1rem;width:100%;background:none;border:0;border-bottom:1px solid var(--line);padding:.95rem .2rem;text-align:left;min-height:56px;transition:background .25s,padding .35s var(--ease)}
+.row:hover{background:rgba(46,106,78,.08);padding-inline:.7rem}
+.row .nm{font-weight:500;flex:1}
+.row .pr{font-variant-numeric:tabular-nums;color:var(--text);font-weight:600;white-space:nowrap}
+.row .pr small{font-weight:500;color:var(--muted);font-size:.8em}
+.row .pr.ask{font-weight:500;color:var(--muted);font-size:.9rem}
+.row .add{flex:none;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--leaf);display:grid;place-items:center;color:var(--leaf);transition:background .25s,color .25s,transform .35s var(--ease)}
+.row .add svg{width:14px;height:14px}
+.row[aria-pressed="true"]{background:rgba(46,106,78,.12)}
+.row[aria-pressed="true"] .add{background:var(--leaf);color:#fff;transform:rotate(45deg)}
+.menu-foot{margin-top:2.2rem;display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:.95rem}
+.brands{margin-top:3rem;padding-top:1.6rem;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:.4rem 2rem;align-items:baseline}
+.brands b{font-family:var(--display);font-size:1.5rem;font-style:italic;font-weight:400}
+.brands span{font-weight:600;letter-spacing:.04em}
+
+/* about */
+.about{position:relative;isolation:isolate;overflow:hidden}
+.about .bg{position:absolute;inset:0;z-index:-1}
+.about .bg img{width:100%;height:100%;object-fit:cover;opacity:.55}
+.about .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ivy) 12%,rgba(15,42,32,.78) 55%,rgba(15,42,32,.5))}
+.about .wrap{padding-block:clamp(80px,12vw,170px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,6vw,96px)}
+.about h2{color:var(--on-dark)}
+.about h2 em{color:var(--brass)}
+.about .body{display:grid;gap:1.2rem;color:var(--on-dark-muted);max-width:36rem;font-size:1.08rem}
+.about .body strong{color:var(--on-dark)}
+
+/* nails + steps */
+.split{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:center;padding-block:clamp(72px,10vw,140px)}
+.split .pic{border-radius:999px 999px 6px 6px;overflow:hidden;aspect-ratio:4/5;max-width:440px;width:100%;justify-self:center;box-shadow:0 30px 60px -30px rgba(15,42,32,.5)}
+.split .pic{position:relative}
+.split .pic img{width:100%;height:100%;object-fit:cover}
+.split .pic .cap{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);background:var(--ivy);color:var(--on-dark);font-size:.8rem;padding:.3rem .7rem;border-radius:3px}
+.split p{color:var(--muted);margin-top:1.2rem;max-width:34rem}
+.split .btn{margin-top:2rem}
+
+/* booking flow */
+.book{background:var(--lichen-2);padding-block:clamp(72px,10vw,140px);scroll-margin-top:60px}
+.flow{margin-top:clamp(32px,4vw,56px);display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.panel{background:#fbfcf8;border:1px solid var(--line);border-radius:10px;padding:clamp(22px,3vw,40px);box-shadow:0 24px 48px -32px rgba(15,42,32,.35)}
+.steps{display:flex;gap:.6rem;margin-bottom:1.6rem;flex-wrap:wrap}
+.steps button{flex:1 1 0;min-width:110px;text-align:left;background:none;border:0;border-top:3px solid var(--line);padding:.7rem 0 0;color:var(--muted);font-weight:600;font-size:.92rem}
+.steps button[aria-current="step"]{border-color:var(--leaf);color:var(--text)}
+.steps button.done{border-color:var(--brass)}
+.steps b{font-family:var(--display);font-weight:500;font-size:1.3rem;margin-right:.4rem}
+.pane h3{font-size:1.7rem;margin-bottom:.4rem}
+.pane>p{color:var(--muted);margin-bottom:1.2rem}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem}
+.chip{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;padding:.5rem 1rem;border:1px solid var(--line);border-radius:999px;background:#fff;font-weight:500;font-size:.95rem;transition:background .2s,border-color .2s,color .2s}
+.chip:hover{border-color:var(--leaf)}
+.chip[aria-pressed="true"]{background:var(--ivy);color:var(--on-dark);border-color:var(--ivy)}
+.chip small{opacity:.75;font-weight:500}
+.grp{margin-top:1.1rem}
+.grp h4{margin:0 0 .5rem;font:700 .85rem/1 var(--sans);letter-spacing:.04em;color:var(--brass-ink);text-transform:none}
+.pane-nav{display:flex;justify-content:space-between;gap:1rem;margin-top:1.8rem;align-items:center;flex-wrap:wrap}
+.linkbtn{background:none;border:0;padding:.5rem 0;text-decoration:underline;font-weight:600;color:var(--muted)}
+.recap{list-style:none;padding:0;margin:1.2rem 0 0;color:var(--muted);font-size:.95rem}
+.recap li{padding:.3rem 0;border-bottom:1px solid var(--line)}
+.note{font-size:.9rem;color:var(--muted);margin-top:1rem}
+.summary{position:sticky;top:96px;background:var(--ivy);color:var(--on-dark);border-radius:10px;padding:clamp(22px,3vw,34px)}
+.summary h3{font-size:1.5rem;font-style:italic}
+.summary ul{list-style:none;margin:1rem 0;padding:0;min-height:3rem}
+.summary li{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px solid var(--line-dark);font-size:.97rem}
+.summary li.empty{color:var(--on-dark-muted);border:0}
+.summary .tot{display:flex;justify-content:space-between;align-items:baseline;font-weight:600;margin-top:.4rem}
+.summary .tot span:last-child{font-family:var(--display);font-size:1.8rem;color:var(--brass);font-variant-numeric:tabular-nums}
+.summary .when{margin-top:.8rem;color:var(--on-dark-muted);font-size:.93rem}
+.summary .btn{width:100%;justify-content:center;margin-top:1.4rem}
+.summary .fine{margin-top:.9rem;font-size:.85rem;color:var(--on-dark-muted)}
+
+/* proof */
+.proof{padding-block:clamp(72px,10vw,140px)}
+.quotes{margin-top:clamp(28px,4vw,56px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+.quotes figure{margin:0;padding-top:1.4rem;border-top:1px solid var(--text)}
+.quotes blockquote{margin:0;font-family:var(--display);font-style:italic;font-size:1.3rem;line-height:1.35}
+.quotes figcaption{margin-top:1rem;color:var(--muted);font-size:.93rem}
+
+/* visit */
+.visit{background:var(--ivy);color:var(--on-dark);padding-block:clamp(72px,10vw,140px)}
+.visit .grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,88px);align-items:stretch}
+.visit h2 em{color:var(--brass)}
+.visit address{font-style:normal;font-size:1.25rem;margin-top:1.6rem;line-height:1.5}
+.visit .near{color:var(--on-dark-muted);margin-top:.6rem}
+.visit .acts{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.6rem}
+.hours{margin-top:2.4rem;width:100%;max-width:30rem;border-collapse:collapse}
+.hours caption{text-align:left;font-family:var(--display);font-style:italic;font-size:1.5rem;padding-bottom:.6rem}
+.hours th,.hours td{text-align:left;padding:.6rem .5rem;border-bottom:1px solid var(--line-dark);font-weight:500}
+.hours td{color:var(--on-dark-muted)}
+.hours tr.today{background:rgba(214,179,106,.14)}
+.hours tr.today th,.hours tr.today td{color:var(--brass);font-weight:700}
+.hours tr.today th::after{content:" · today";font-weight:500}
+.map{min-height:420px;border-radius:10px;overflow:hidden;border:1px solid var(--line-dark);background:var(--ivy-2)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.35) contrast(.95)}
+.contact-line{margin-top:1.4rem;color:var(--on-dark-muted)}
+
+/* closing */
+.closing{position:relative;overflow:hidden;background:var(--ink);color:var(--on-dark);text-align:center;padding-block:clamp(88px,13vw,180px)}
+.closing h2{font-size:clamp(2.6rem,6.2vw,5rem);max-width:15ch;margin-inline:auto}
+.closing h2 em{color:var(--brass)}
+.closing p{margin:1.6rem auto 2.2rem;max-width:34rem;color:var(--on-dark-muted)}
+footer{background:var(--ink);color:var(--on-dark-muted);border-top:1px solid var(--line-dark);padding-block:1.6rem;font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer a{color:var(--on-dark)}
+
+/* sticky mobile bar */
+.mbar{display:none}
+@media(max-width:900px){
+  nav.main{display:none}
+  header.top .btn{margin-left:auto}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:36px;padding-bottom:56px}
+  .stage{width:min(80%,400px);margin:7rem auto 2rem;aspect-ratio:4/4.6}
+  .stage svg.vine{inset:-4% -10% -8% -12%;width:122%;height:112%}
+  .menu,.about .wrap,.split,.visit .grid,.flow,.quotes{grid-template-columns:1fr}
+  .summary{position:static}
+  .split .pic{max-width:320px}
+  .mbar{display:grid;grid-template-columns:1.4fr 1fr;gap:.6rem;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:.65rem var(--gutter) calc(.65rem + env(safe-area-inset-bottom));background:rgba(11,33,26,.97);border-top:1px solid var(--line-dark)}
+  .mbar a{justify-content:center;min-height:50px}
+  .mbar .btn-ghost{background:var(--ivy)}
+  .mbar.three{grid-template-columns:1.4fr 1fr 1fr}
+  body{padding-bottom:78px}
+}
+@media(max-width:520px){
+  .brand small{display:none}
+  .hero .cta .btn{width:100%;justify-content:center}
+  .stage figcaption{right:0}
+  .row{gap:.7rem}
+  .steps button{min-width:0;flex:1 1 30%;font-size:.85rem}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ivy Hairdressing &amp; Beauty Salon, home">Ivy <small>Hairdressing &amp; Beauty</small></a>
+    <nav class="main" aria-label="Primary">
+      <a href="#services">Services &amp; prices</a>
+      <a href="#about">About</a>
+      <a href="#visit">Find us</a>
+    </nav>
+    <a class="btn btn-brass" href="#book" data-book>Book now</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero dark" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <h1 id="h1" class="rise">Hair that’s <em>yours,</em> done properly.</h1>
+      <p class="lede rise">Cuts, colour, balayage, extensions and nails at Argus Lane, Parramatta. Women’s cuts <strong>from $30</strong>, men’s <strong>from $25</strong>, kids <strong>from $20</strong>. Pick a service, pick a time, pay online.</p>
+      <div class="cta rise">
+        <a class="btn btn-brass" href="#book" data-book>Book your appointment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#services">See every price</a>
+      </div>
+      <div class="facts rise"><span>7 Argus Lane, Parramatta</span><span>Close to public transport and parking</span></div>
+    </div>
+    <figure class="stage" style="margin:0">
+      <svg class="vine" id="vine" viewBox="0 0 600 760" preserveAspectRatio="xMidYMid meet" aria-hidden="true"></svg>
+      <div class="leafpic"><img src="https://bookwell.imgix.net/websites/ivyhairdressing-parramatta.com.au/hero-dt.jpg?w=1400&auto=compress" alt="Ombré hair with warm balayage tones being styled with a straightener" width="1400" height="930" fetchpriority="high"></div>
+      <figcaption>Balayage from $200</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="services" id="services" aria-labelledby="sv">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="sv">The full menu, <em>with prices.</em></h2>
+      <p>All prices are “from” prices, as listed on our booking page. Tap the + to add a service to your booking.</p>
+    </div>
+    <div class="menu" id="menu"></div>
+    <div class="brands">
+      <b>Treatments we use</b><span>Keune</span><span>Olaplex</span><span>Global</span><span>Keratin</span><span>Suigo</span>
+    </div>
+    <div class="menu-foot"><a class="btn btn-dark" href="#book" data-book>Book these services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><span>Hair Extensions and Nail Art are priced on the booking page.</span></div>
+  </div>
+</section>
+
+<section class="about dark" id="about" aria-labelledby="ab">
+  <div class="bg"><img src="https://images.unsplash.com/photo-1761760754102-c20956c917c2?ixlib=rb-4.1.0&q=80&fm=jpg&crop=entropy&cs=srgb&w=1800" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <h2 id="ab">Everybody is unique. <em>So is every style we create.</em></h2>
+    <div class="body">
+      <p>Our stylists are skilled in <strong>cutting, styling, every form of colouring and hair extensions.</strong> They’re so good, we also fix DIY hair disasters. We’ll always make your bad hair day better.</p>
+      <p>We think the health of your hair matters as much as the cut or the colour, so we offer treatments from <strong>Keune, Olaplex, Global, Keratin and Suigo.</strong></p>
+      <p>Finish the look with your essential nail services, all under the one roof.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap split" aria-labelledby="nl">
+  <div class="pic"><img src="https://images.unsplash.com/photo-1754799670312-8e7da8e40ad7?ixlib=rb-4.1.0&q=80&fm=jpg&crop=entropy&cs=srgb&w=900" alt="Hands with navy and gold nail art" loading="lazy" width="900" height="1125"><span class="cap">Illustrative photo</span></div>
+  <div>
+    <h2 id="nl">Nails, to <em>finish the look.</em></h2>
+    <p>Polish from $25, gel from $25, shellac from $45, SNS from $50 and acrylic from $65. Refills, removal and repair from $45, plus nail art priced at booking.</p>
+    <a class="btn btn-dark" href="#book" data-book data-pick="Gel Nails">Book nails <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="book" id="book" aria-labelledby="bk">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:0">
+      <h2 id="bk">Book in <em>three steps.</em></h2>
+      <p>Choose your service, tell us when suits, then confirm on our secure booking page. Live times and payment are handled there.</p>
+    </div>
+    <div class="flow">
+      <div class="panel">
+        <div class="steps" role="tablist" aria-label="Booking steps">
+          <button type="button" data-go="1" aria-current="step"><b>1</b>Services</button>
+          <button type="button" data-go="2"><b>2</b>When</button>
+          <button type="button" data-go="3"><b>3</b>Confirm</button>
+        </div>
+
+        <div class="pane" data-pane="1">
+          <h3>What are we doing today?</h3>
+          <p>Select one or more. Heads up: the secure booking page can’t read this summary, so you’ll re-select your services there.</p>
+          <div id="chips"></div>
+          <div class="pane-nav"><span class="note" id="err1" role="alert"></span><button class="btn btn-dark" type="button" data-next="2">Next: pick a time</button></div>
+        </div>
+
+        <div class="pane" data-pane="2" hidden>
+          <h3>When suits you?</h3>
+          <p>Choose a preferred day and part of the day. You’ll see actual available times on the booking page.</p>
+          <div class="grp"><h4>Day</h4><div class="chips" id="days"></div></div>
+          <div class="grp"><h4>Time of day</h4><div class="chips" id="parts"></div></div>
+          <div class="pane-nav"><button class="linkbtn" type="button" data-next="1">Back</button><button class="btn btn-dark" type="button" data-next="3">Next: review</button></div>
+        </div>
+
+        <div class="pane" data-pane="3" hidden>
+          <h3>Looks good. Let’s lock it in.</h3>
+          <p>We’ll take you to Ivy’s secure Fresha booking page to choose your exact time and pay online. Group appointments are available there too.</p>
+          <div class="pane-nav"><button class="linkbtn" type="button" data-next="2">Back</button><a class="btn btn-brass" id="finish" href="https://www.fresha.com/book-now/ge1wibqt/all-offer?pId=439568" target="_blank" rel="noopener">Continue to secure booking <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <ul class="recap" id="recap"></ul><p class="note">Opens in a new tab. Re-select the services above on the booking page.</p>
+        </div>
+      </div>
+
+      <aside class="summary" aria-live="polite" aria-label="Your booking summary">
+        <h3>Your booking</h3>
+        <ul id="sumlist"><li class="empty">Nothing selected yet.</li></ul>
+        <div class="tot"><span>Estimated from</span><span id="sumtot">$0</span></div>
+        <p class="when" id="sumwhen">Day and time: not chosen yet</p>
+        <p class="fine">“From” prices are starting prices and your final price is confirmed when you book.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="wrap proof" aria-labelledby="pf">
+  <div class="sec-head" style="margin-bottom:0">
+    <h2 id="pf">Kind words <em>from clients.</em></h2>
+    <p><span class="tag">Placeholder</span> &nbsp;Replace with real client reviews before launch. These are not real testimonials.</p>
+  </div>
+  <div class="quotes">
+    <figure><blockquote>“Placeholder review text. Add a genuine client quote about a cut, colour or nails here.”</blockquote><figcaption>Client name, service <span class="tag">Placeholder</span></figcaption></figure>
+    <figure><blockquote>“Placeholder review text. A short, specific line reads best.”</blockquote><figcaption>Client name, service <span class="tag">Placeholder</span></figcaption></figure>
+    <figure><blockquote>“Placeholder review text. Link these to your Google or Fresha reviews.”</blockquote><figcaption>Client name, service <span class="tag">Placeholder</span></figcaption></figure>
+  </div>
+</section>
+
+<section class="visit dark" id="visit" aria-labelledby="vs">
+  <div class="wrap grid">
+    <div>
+      <h2 id="vs">Find us on <em>Argus Lane.</em></h2>
+      <address>Ivy Hairdressing &amp; Beauty Salon<br>7 Argus Lane<br>Parramatta, Sydney NSW</address>
+      <p class="near">Close to public transport and parking.</p>
+      <div class="acts">
+        <a class="btn btn-brass" href="https://www.google.com/maps/search/?api=1&query=Ivy+Hairdressing+and+Beauty+Salon+7+Argus+Lane+Parramatta+NSW" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn-ghost" href="#book" data-book>Book online</a>
+      </div>
+      <p class="contact-line" id="phoneline">Phone: <span class="tag">Placeholder: add salon phone number</span></p>
+      <table class="hours" id="hours">
+        <caption>Opening hours <span class="tag">Placeholder</span></caption>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="map"><iframe title="Map showing Ivy Hairdressing &amp; Beauty Salon, Argus Lane, Parramatta" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=7+Argus+Lane+Parramatta+NSW&amp;output=embed"></iframe></div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="cl">
+  <div class="wrap">
+    <h2 id="cl">Your next great hair day is <em>one booking away.</em></h2>
+    <p>Choose your service. Choose your time. Pay online, safe, secure and reliable.</p>
+    <a class="btn btn-brass" href="#book" data-book>Book your appointment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Ivy Hairdressing &amp; Beauty Salon, Parramatta</span>
+    <span><a href="https://www.fresha.com/docs/legal-clauses-website-terms_v2.pdf" target="_blank" rel="noopener">Terms of Use</a> · <a href="https://www.fresha.com/docs/legal-clauses-privacy.pdf" target="_blank" rel="noopener">Privacy</a> · Bookings by <a href="https://www.fresha.com" target="_blank" rel="noopener">Fresha</a></span>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar" aria-label="Quick actions">
+  <a class="btn btn-brass" href="#book" data-book>Book now</a>
+  <a class="btn btn-ghost" id="mdir" href="https://www.google.com/maps/search/?api=1&query=Ivy+Hairdressing+and+Beauty+Salon+7+Argus+Lane+Parramatta+NSW" target="_blank" rel="noopener">Directions</a>
+</div>
+
+<script>
+(function(){
+  // Set once the salon supplies a real number; the Call button and phone line then appear.
+  var PHONE = "";
+  var FRESHA = "https://www.fresha.com/book-now/ge1wibqt/all-offer?pId=439568";
+
+  var SERVICES = [
+    {g:"Cut & style", items:[["Women’s Haircut",30],["Men’s Haircut",25],["Children’s Haircut",20],["Blow Dry",25],["Hair Styling",30],["Formal Hair",30]]},
+    {g:"Colour", items:[["Hair Colouring",50],["Hair Highlights",80],["Balayage",200],["Ombre",180]]},
+    {g:"Treatments & length", items:[["Hair Treatments",20],["Keratin Treatment",200],["Straighteners",200],["Hair Extensions",null]]},
+    {g:"Nails", items:[["Nail Polish",25],["Gel Nails",25],["Shellac",45],["SNS Nails",50],["Acrylic Nails",65],["Nail Refill, Removal & Repair",45],["Nail Art",null]]}
+  ];
+  var sel = new Set();
+  var day = "", part = "";
+  var plus = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>';
+  function price(p){return p==null?'<span class="pr ask">Price at booking</span>':'<span class="pr"><small>from</small> $'+p+'</span>';}
+
+  /* menu */
+  var menu = document.getElementById('menu');
+  menu.innerHTML = SERVICES.map(function(s){
+    return '<section><h3>'+s.g+'</h3><ul>'+s.items.map(function(i){
+      return '<li><button type="button" class="row" aria-pressed="false" data-svc="'+i[0]+'"><span class="nm">'+i[0]+'</span>'+price(i[1])+'<span class="add" aria-hidden="true">'+plus+'</span></button></li>';
+    }).join('')+'</ul></section>';
+  }).join('');
+
+  /* chips */
+  document.getElementById('chips').innerHTML = SERVICES.map(function(s){
+    return '<div class="grp"><h4>'+s.g+'</h4><div class="chips">'+s.items.map(function(i){
+      return '<button type="button" class="chip" aria-pressed="false" data-svc="'+i[0]+'">'+i[0]+(i[1]!=null?' <small>$'+i[1]+'</small>':'')+'</button>';
+    }).join('')+'</div></div>';
+  }).join('');
+
+  var DAYS=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+  document.getElementById('days').innerHTML = DAYS.map(function(d){return '<button type="button" class="chip" aria-pressed="false" data-day="'+d+'">'+d.slice(0,3)+'</button>';}).join('')+'<button type="button" class="chip" aria-pressed="false" data-day="Any day">Any day</button>';
+  document.getElementById('parts').innerHTML = ["Morning","Afternoon","Evening","Any time"].map(function(p){return '<button type="button" class="chip" aria-pressed="false" data-part="'+p+'">'+p+'</button>';}).join('');
+
+  function lookup(n){var f=null;SERVICES.forEach(function(s){s.items.forEach(function(i){if(i[0]===n)f=i;});});return f;}
+  function sync(){
+    document.querySelectorAll('[data-svc]').forEach(function(b){b.setAttribute('aria-pressed',sel.has(b.dataset.svc));});
+    document.querySelectorAll('[data-day]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.day===day);});
+    document.querySelectorAll('[data-part]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.part===part);});
+    var list=document.getElementById('sumlist'), tot=0, unpriced=0, html='';
+    sel.forEach(function(n){var i=lookup(n);if(i[1]==null){unpriced++;html+='<li><span>'+n+'</span><span>at booking</span></li>';}else{tot+=i[1];html+='<li><span>'+n+'</span><span>$'+i[1]+'</span></li>';}});
+    list.innerHTML = html || '<li class="empty">Nothing selected yet.</li>';
+    document.getElementById('sumtot').textContent='$'+tot+(unpriced?'+':'');
+    var rc=document.getElementById('recap');if(rc){rc.innerHTML=Array.from(sel).map(function(n){return '<li>'+n+'</li>';}).join('')+'<li>When: '+((day||part)?[day,part].filter(Boolean).join(', '):'any time')+'</li>';}
+    document.getElementById('sumwhen').textContent='Day and time: '+((day||part)?[day,part].filter(Boolean).join(', '):'not chosen yet');
+  }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-svc]');
+    if(b){var n=b.dataset.svc;sel.has(n)?sel.delete(n):sel.add(n);document.getElementById('err1').textContent='';sync();return;}
+    b=e.target.closest('[data-day]');if(b){day=day===b.dataset.day?'':b.dataset.day;sync();return;}
+    b=e.target.closest('[data-part]');if(b){part=part===b.dataset.part?'':b.dataset.part;sync();return;}
+    b=e.target.closest('[data-book]');
+    if(b&&b.dataset.pick){sel.add(b.dataset.pick);sync();}
+  });
+
+  /* steps */
+  var cur=1;
+  function go(n){
+    if(n>1&&!sel.size){document.getElementById('err1').textContent='Choose at least one service to continue.';n=1;}
+    cur=n;
+    document.querySelectorAll('.pane').forEach(function(p){p.hidden=(+p.dataset.pane!==n);});
+    document.querySelectorAll('.steps button').forEach(function(s){var k=+s.dataset.go;s.toggleAttribute('aria-current',k===n);if(k===n)s.setAttribute('aria-current','step');else s.removeAttribute('aria-current');s.classList.toggle('done',k<n);});
+    var p=document.querySelector('.pane:not([hidden]) h3');if(p&&document.activeElement&&document.activeElement.matches('[data-next],[data-go]')){p.setAttribute('tabindex','-1');p.focus({preventScroll:true});}
+  }
+  document.querySelectorAll('[data-next]').forEach(function(b){b.addEventListener('click',function(){go(+b.dataset.next);});});
+  document.querySelectorAll('[data-go]').forEach(function(b){b.addEventListener('click',function(){go(+b.dataset.go);});});
+
+  /* hours (values are placeholders; today highlighted) */
+  var today=new Intl.DateTimeFormat('en-AU',{weekday:'long',timeZone:'Australia/Sydney'}).format(new Date());
+  document.querySelector('#hours tbody').innerHTML = DAYS.map(function(d){
+    return '<tr'+(d===today?' class="today"':'')+'><th scope="row">'+d+'</th><td>Hours to be confirmed</td></tr>';
+  }).join('');
+
+  /* phone */
+  if(PHONE){
+    var tel='tel:'+PHONE.replace(/\s+/g,'');
+    document.getElementById('phoneline').innerHTML='Phone: <a href="'+tel+'">'+PHONE+'</a>';
+    var m=document.getElementById('mbar');m.classList.add('three');
+    m.insertAdjacentHTML('beforeend','<a class="btn btn-ghost" href="'+tel+'">Call</a>');
+  }
+
+  /* ivy vine: one authored motion moment */
+  var svg=document.getElementById('vine'), NS='http://www.w3.org/2000/svg';
+  var d='M70 760 C 20 640 70 560 40 470 C 10 380 40 300 30 210 C 20 120 120 60 230 40 C 320 24 420 20 520 56 C 575 76 585 110 560 140';
+  var stem=document.createElementNS(NS,'path');stem.setAttribute('d',d);stem.setAttribute('class','stem');stem.setAttribute('vector-effect','non-scaling-stroke');
+  svg.appendChild(stem);
+  var len=stem.getTotalLength();stem.style.setProperty('--len',len);
+  var N=13;
+  for(var i=1;i<=N;i++){
+    var t=i/(N+1)*len, p=stem.getPointAtLength(t), q=stem.getPointAtLength(Math.min(len,t+2));
+    var ang=Math.atan2(q.y-p.y,q.x-p.x)*180/Math.PI, side=i%2?-1:1;
+    var s=.8+((i*37)%5)/10;
+    var leaf=document.createElementNS(NS,'path');
+    leaf.setAttribute('d','M0 0 C 10 -14 28 -16 40 0 C 28 16 10 14 0 0 Z');
+    leaf.setAttribute('class','lf');
+    var g=document.createElementNS(NS,'g');g.setAttribute('transform','translate('+p.x+' '+p.y+') rotate('+(ang+side*52)+') scale('+s+')');g.appendChild(leaf);
+    leaf.style.setProperty('--d',(t/len*3.0+.2).toFixed(2)+'s');
+    svg.appendChild(g);
+  }
+})();
+</script>
+</body>
+</html>
